@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class _FormMyApp extends StatelessWidget{
-  @override 
-  Widget build(BuildContext context){
+class FormMyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     final appTitle = 'Form Validation Demo';
 
     return MaterialApp(
@@ -17,25 +17,26 @@ class _FormMyApp extends StatelessWidget{
   }
 }
 
-class _MyCustomForm extends StatefulWidget{
+class _MyCustomForm extends StatefulWidget {
   @override
-  _MyCustomFormState createState(){
+  _MyCustomFormState createState() {
     return _MyCustomFormState();
   }
 }
 
-class _MyCustomFormState extends State<_MyCustomForm>{
+class _MyCustomFormState extends State<_MyCustomForm> {
   final _formKey = GlobalKey<FormState>();
+
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Form(
       key: _formKey,
       child: Column(
-        crossAxisAligment: CrossAxisAligment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           TextFormField(
-            validator: (value){
-              if(value.isEmpty){
+            validator: (value) {
+              if (value.isEmpty) {
                 return 'Please enter some text';
               }
               return null;
@@ -45,8 +46,9 @@ class _MyCustomFormState extends State<_MyCustomForm>{
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: RaisedButton(
               onPressed: () {
-                if(_formKey.currentState.validate()){
-                  Scaffold.of(context).showSnackBar(SnackBar(content: Text('Processing Data')));
+                if (_formKey.currentState.validate()) {
+                  Scaffold.of(context)
+                      .showSnackBar(SnackBar(content: Text('Processing Data')));
                 }
               },
               child: Text('Submit'),

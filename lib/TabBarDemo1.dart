@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class TabBarDemo1 extends StatelessWidget{
+class TabBarDemo1 extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
           appBar: AppBar(
             bottom: TabBar(
-              tabs:[
+              tabs: [
                 Tab(icon: Icon(Icons.directions_car)),
                 Tab(icon: Icon(Icons.directions_transit)),
                 Tab(icon: Icon(Icons.directions_bike)),
@@ -28,5 +28,5 @@ class TabBarDemo1 extends StatelessWidget{
         ),
       ),
     );
-  },
+  }
 }
