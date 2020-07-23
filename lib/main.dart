@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_listTile/AlertMyApp.dart';
+import 'package:flutter_listTile/GestHandTaps.dart';
 
 void main() => runApp(MyApp());
+
+// import 'package:flutter/material.dart';
+// import 'package:flutter_listTile/IntActMyApp.dart';
+
+// void main() => runApp(MyApp());
+
+// import 'package:flutter/material.dart';
+// import 'package:flutter_listTile/AlertMyApp.dart';
+
+// void main() => runApp(MyApp());
 
 // import 'package:flutter/material.dart';
 // import 'package:flutter_listTile/MyAppChangeText.dart';
