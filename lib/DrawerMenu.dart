@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_listTile/ItemData2.dart';
-import 'package:flutter_listTile/detail_screen.dart';
 
 class DrawerMenu extends StatelessWidget {
   final appTitle = 'Drawer Menu Demo';
