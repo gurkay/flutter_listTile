@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: FadeInImage.assetNetwork(
-              placeholder: 'assets/loader.png',
-              image: 'https://picsum.photos/250?image=9'),
+            placeholder: 'assets/loader.png',
+            image: 'https://picsum.photos/250?image=9',
+          ),
         ),
       ),
     );
