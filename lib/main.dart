@@ -1,7 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_listTile/ListsGridLists.dart';
+import 'package:flutter_listTile/ListsMixedList.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyApp(
+      items: List<ListItem>.generate(
+        1000,
+        (index) => index % 6 == 0
+            ? HeadingItem('Heading $index')
+            : MessageItem('Sender $index', 'Message body $index'),
+      ),
+    ));
+
+// import 'package:flutter/material.dart';
+// import 'package:flutter_listTile/ListsHorizontalList.dart';
+
+// void main() => runApp(MyApp());
+
+// import 'package:flutter/material.dart';
+// import 'package:flutter_listTile/ListsGridLists.dart';
+
+// void main() => runApp(MyApp());
 
 // import 'package:flutter/material.dart';
 // import 'package:flutter_listTile/ImagesFadingInImages.dart';
