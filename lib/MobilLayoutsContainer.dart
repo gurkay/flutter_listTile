@@ -11,11 +11,16 @@ class MyApp extends StatelessWidget {
 }
 
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   final String title;
   MyHomePage({Key key, this.title}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  Widget build(BuildContext context){
+    return Center(
+      // Container is a rectangle area on the screen.
+      child: Container(width: 200.0,),
+    );
+  }
 }
 
